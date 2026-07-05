@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+._*
+
+# ローカル用バックアップ画像（公開不要）
+assets/img/*-orig.png
