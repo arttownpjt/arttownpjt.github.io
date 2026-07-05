@@ -163,7 +163,7 @@ summary:focus-visible {
   margin: 0 0 22px;
 }
 .hero-characters img { width: auto; }
-.hero-characters img:nth-child(1) { height: 150px; } /* parasol（傘込み・基準） */
+.hero-characters img:nth-child(1) { height: 150px; } /* parasol（傘の女の子）＝基準 */
 .hero-characters img:nth-child(2) { height: 116px; } /* sunny：人物をparasolに合わせ縮小 */
 .hero-characters img:nth-child(3) { height: 122px; } /* step：人物をparasolに合わせ縮小 */
 @media (max-width: 720px) {
@@ -331,11 +331,10 @@ behold-widget { display: block; margin-top: 20px; }
 .insta-more { text-align: center; margin-top: 20px; }
 
 .service-card .service-logo {
-  width: min(172px, 58%);
-  height: 62px;
-  object-fit: contain;
-  object-position: left center;
-  margin: 0 0 8px;
+  height: 46px;
+  width: auto;
+  max-width: min(180px, 60%);
+  margin: 0 0 10px;
   image-rendering: auto;
 }
 .service-card .service-character {
