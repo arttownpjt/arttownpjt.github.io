@@ -162,9 +162,14 @@ summary:focus-visible {
   max-width: 590px;
   margin: 0 0 22px;
 }
-.hero-characters img { height: 150px; width: auto; }
+.hero-characters img { width: auto; }
+.hero-characters img:nth-child(1) { height: 150px; } /* parasol（傘込み・基準） */
+.hero-characters img:nth-child(2) { height: 116px; } /* sunny：人物をparasolに合わせ縮小 */
+.hero-characters img:nth-child(3) { height: 122px; } /* step：人物をparasolに合わせ縮小 */
 @media (max-width: 720px) {
-  .hero-characters img { height: 112px; }
+  .hero-characters img:nth-child(1) { height: 112px; }
+  .hero-characters img:nth-child(2) { height: 87px; }
+  .hero-characters img:nth-child(3) { height: 91px; }
 }
 .hero .cta-row {
   display: flex; gap: 12px; flex-wrap: wrap;
