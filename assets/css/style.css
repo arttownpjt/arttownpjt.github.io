@@ -19,7 +19,7 @@
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; overflow-x: clip; }
 body {
   font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", system-ui, -apple-system, sans-serif;
   color: var(--c-text);
@@ -331,6 +331,9 @@ behold-widget { display: block; margin-top: 20px; }
   max-width: min(180px, 60%);
   margin: 0 0 10px;
   image-rendering: auto;
+}
+@media (max-width: 720px) {
+  .service-card.sunny .service-logo { height: 32px; } /* 携帯でsunnyロゴを約70%に */
 }
 .service-card .service-character {
   width: auto;
