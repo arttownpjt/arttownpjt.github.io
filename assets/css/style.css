@@ -162,14 +162,9 @@ summary:focus-visible {
   max-width: 590px;
   margin: 0 0 22px;
 }
-.hero-characters img { width: auto; }
-.hero-characters img:nth-child(1) { height: 150px; } /* parasol（傘の女の子）＝基準 */
-.hero-characters img:nth-child(2) { height: 116px; } /* sunny：人物をparasolに合わせ縮小 */
-.hero-characters img:nth-child(3) { height: 122px; } /* step：人物をparasolに合わせ縮小 */
+.hero-characters img { height: 150px; width: auto; }
 @media (max-width: 720px) {
-  .hero-characters img:nth-child(1) { height: 112px; }
-  .hero-characters img:nth-child(2) { height: 87px; }
-  .hero-characters img:nth-child(3) { height: 91px; }
+  .hero-characters img { height: 112px; }
 }
 .hero .cta-row {
   display: flex; gap: 12px; flex-wrap: wrap;
@@ -531,15 +526,15 @@ details.accordion > .acc-body { padding: 0 18px 18px; }
 .section-character {
   display: block;
   width: auto;
-  max-width: min(76%, 230px);
-  max-height: 240px;
+  max-width: min(54%, 161px);
+  max-height: 168px;
   object-fit: contain;
   object-position: left bottom;
   margin: 28px 0 0;
   filter: drop-shadow(0 18px 26px rgba(23,23,23,.08));
 }
-.sunny-character { max-height: 226px; }
-.step-character { max-height: 236px; }
+.sunny-character { max-height: 158px; }
+.step-character { max-height: 165px; }
 
 .lp-anchor-nav {
   background: #fff;
