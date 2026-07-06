@@ -132,6 +132,7 @@ summary:focus-visible {
   gap: clamp(40px, 6vw, 84px);
   align-items: stretch;
 }
+.hero-copy, .hero-poster { min-width: 0; }
 .eyebrow {
   color: var(--c-muted);
   font-size: 12px;
@@ -191,14 +192,16 @@ summary:focus-visible {
     padding: 42px 0 44px;
   }
   .hero-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .hero h1 {
-    font-size: clamp(30px, 10vw, 44px);
+    font-size: clamp(24px, 7.6vw, 40px);
   }
+  .hero h1 .nw { white-space: normal; } /* 携帯では折り返しを許可（右はみ出し防止） */
   .hero-poster {
-    min-height: 260px;
-    aspect-ratio: 16 / 10;
+    min-height: 0;
+    height: 230px;
+    aspect-ratio: auto;
   }
   .hero-poster::before {
     inset: -12px 12px 12px -12px;
