@@ -117,6 +117,87 @@
   <a class="btn btn-primary" href="#contact">お問い合わせ</a>
 </div>
 
+<!-- ===== お知らせ・トピックス ===== -->
+<style>
+  #topics .topics-lead{color:var(--c-muted); font-size:15px; margin:0 0 26px;}
+  /* 最上部の注目：夏のアート体験 */
+  #topics .feature{
+    display:grid; grid-template-columns:260px 1fr; gap:26px; align-items:center;
+    border:1px solid var(--c-line); border-radius:8px; background:#fff; padding:22px; margin-bottom:28px;
+  }
+  #topics .feature .flyer{position:relative; border-radius:6px; overflow:hidden; border:1px solid var(--c-line);}
+  #topics .feature .flyer img{display:block; width:100%; height:auto; filter:grayscale(.3) brightness(.94);}
+  #topics .feature .ribbon{position:absolute; top:15px; left:-44px; transform:rotate(-45deg);
+    background:#b23b3b; color:#fff; font-weight:800; font-size:13px; letter-spacing:.06em; padding:6px 56px; box-shadow:0 2px 6px rgba(0,0,0,.25);}
+  #topics .feature h3{margin:0 0 6px; font-size:22px; color:var(--c-heading);}
+  #topics .feature .st{display:inline-block; font-size:12px; font-weight:800; border-radius:999px; padding:3px 12px; margin-left:10px; background:#f3e2e2; color:#b23b3b; vertical-align:3px;}
+  #topics .feature dl{display:grid; grid-template-columns:64px 1fr; gap:3px 12px; margin:12px 0 0; font-size:14px;}
+  #topics .feature dt{color:var(--c-muted); font-weight:700;}
+  #topics .feature dd{margin:0;}
+  #topics .feature p{margin:12px 0 0; font-size:14px; color:#333;}
+  /* 行リスト */
+  #topics .rows{border-top:1px solid var(--c-line);}
+  #topics .row{display:grid; grid-template-columns:104px 92px 1fr; gap:18px; align-items:center; padding:16px 4px; border-bottom:1px solid var(--c-line);}
+  #topics .row .date{color:var(--c-muted); font-size:13px; font-weight:700; letter-spacing:.03em;}
+  #topics .row .cat{display:inline-block; font-size:11px; font-weight:800; color:#fff; border-radius:4px; padding:2px 9px; text-align:center;}
+  #topics .row .cat.exhibit{background:var(--c-accent);}
+  #topics .row .cat.event{background:var(--c-sunny);}
+  #topics .row .ttl{font-size:15px; color:#222; font-weight:700;}
+  #topics .row .desc{font-size:13px; color:var(--c-muted); margin-top:2px;}
+  #topics .row .desc a{font-weight:700;}
+  @media(max-width:720px){
+    #topics .feature{grid-template-columns:1fr;}
+    #topics .row{grid-template-columns:84px 1fr; }
+    #topics .row .cat{grid-column:1 / -1; justify-self:start;}
+  }
+</style>
+<section id="topics">
+  <div class="container">
+    <h2 class="section-title">お知らせ・トピックス</h2>
+    <p class="topics-lead">イベントや、子どもたちの作品展示など、最新の活動をお伝えします。</p>
+
+    <!-- 最上部：夏のアート体験 -->
+    <div class="feature">
+      <div class="flyer">
+        <span class="ribbon">募集終了</span>
+        <img src="assets/img/flyer_natsu.png" alt="夏のアート体験 2026 チラシ">
+      </div>
+      <div class="feature-body">
+        <h3>夏のアート体験！2026<span class="st">募集は終了しました</span></h3>
+        <dl>
+          <dt>日時</dt><dd>2026年8月9日（日）10:00〜12:00</dd>
+          <dt>会場</dt><dd>三重大学教育学部イベントホール</dd>
+          <dt>内容</dt><dd>プラ板キーホルダー・ねん土で動物・缶バッジ・レジンのアクセサリー</dd>
+        </dl>
+        <p>三重大学のキャンパスで、いろんなアートを楽しむ体験イベントです。おかげさまで定員に達し、募集は終了いたしました。たくさんのお申し込みをありがとうございました。</p>
+      </div>
+    </div>
+
+    <!-- 他は行で -->
+    <div class="rows">
+      <div class="row">
+        <span class="date">2026.07〜08</span>
+        <span class="cat exhibit">展示中</span>
+        <span>
+          <span class="ttl">子どもたちの共同制作を展示中！（〜8/31）</span>
+          <div class="desc">赤塚植物園（アカツカFFCパビリオン2階）／ ごかつら池どうぶつパーク（ほこほこルーム）で展示中。
+          <a href="https://www.mie-u.ac.jp/news/topics/2026/07/post-4200.html" target="_blank" rel="noopener">三重大学の活動報告 ▶</a></div>
+        </span>
+      </div>
+      <div class="row">
+        <span class="date">2026.03〜04</span>
+        <span class="cat event">イベント</span>
+        <span>
+          <span class="ttl">春のアート体験を開催しました（全4回・終了）</span>
+          <div class="desc">水族館・お花畑・動物園・ねこの4テーマで共同制作。この作品を、いま上記2施設で展示しています。</div>
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ===== お知らせ・トピックスここまで ===== -->
+
 <section id="instagram" class="alt">
   <div class="container">
     <h2 class="section-title">Instagram ｜ 最新の様子</h2>
